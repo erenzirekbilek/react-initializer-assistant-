@@ -1,22 +1,26 @@
 # 🚀 React Initializer Assistant
 
-Bu proje, React uygulamalarını başlatma ve derleme süreçlerini otomatize eden, kullanıcı dostu bir grafiksel arayüz (GUI) asistanıdır. Terminal komutlarıyla uğraşmadan, sadece birkaç tıklama ile yeni bir React projesi oluşturabilir veya mevcut projelerinizin build işlemlerini yönetebilirsiniz.
+React projelerinizi başlatma ve derleme süreçlerini görsel bir arayüzle yönetin. Terminal karmaşasına son verin!
+
+![Uygulama Ekran Görüntüsü](proje-image.jpg)
+
+Bu proje, React uygulamalarını sıfırdan oluşturmayı ve mevcut projelerin build süreçlerini otomatize eden, Python tabanlı bir GUI (Grafiksel Arayüz) asistanıdır.
 
 ## ✨ Öne Çıkan Özellikler
 
-* **Görsel Klasör Seçimi:** Projenin kurulacağı dizini manuel yazmak yerine "Gözat" butonu ile kolayca seçebilirsiniz.
-* **Otomatik Kurulum (CRA):** `npx create-react-app` komutunu kullanarak, herhangi bir soru-cevap sürecine takılmadan kurulumu tamamlar.
-* **Canlı Log Ekranı:** Arka planda çalışan terminal çıktılarını (paket indirme, kurulum vb.) anlık olarak uygulama içerisindeki konsol panelinden izleyebilirsiniz.
-* **Hata Yönetimi:** Windows sistemlerindeki karakter kodlama (`charmap`) hataları ve interaktif menü takılmaları (Vite/CRA soruları) optimize edilmiştir.
-* **Tek Tıkla Build:** Projeniz hazır olduğunda "Mevcutu Build Et" butonu ile hızlıca üretim dosyalarını oluşturabilirsiniz.
+* **📂 Görsel Klasör Seçimi:** Proje dizinini manuel yazmak yerine "Gözat" butonu ile kolayca belirleyin.
+* **⚡ Otomatik Kurulum (CRA):** `npx create-react-app` komutunu kullanarak, interaktif sorulara (Yes/No) takılmadan otomatik kurulum yapar.
+* **📜 Canlı Log Ekranı:** Paket indirme ve kurulum gibi arka plan süreçlerini anlık olarak uygulama içindeki panelden izleyin.
+* **🛠️ Hata Yönetimi:** Windows sistemlerindeki karakter kodlama (`charmap`) hataları ve terminal takılmaları için özel olarak optimize edilmiştir.
+* **📦 Tek Tıkla Build:** Üretim dosyalarınızı (production build) tek bir butonla saniyeler içinde hazırlayın.
 
 ## 🛠️ Gereksinimler
 
-Uygulamayı çalıştırmadan veya derlemeden önce sisteminizde şunların yüklü olduğundan emin olun:
+Uygulamayı çalıştırmadan önce sisteminizde şunların yüklü olması gerekir:
 
-* **Node.js & npm:** React kurulumu için gereklidir.
-* **Python 3.x:** Asistan uygulamasının çalışması için gereklidir.
-* **Git:** Proje versiyon kontrolü için gereklidir.
+* **Node.js & npm:** React paket yönetimi için.
+* **Python 3.x:** Uygulama arayüzünün çalışması için.
+* **Git:** Versiyon kontrolü için.
 
 ## 🚀 Kullanım
 
@@ -28,30 +32,22 @@ Uygulamayı çalıştırmadan veya derlemeden önce sisteminizde şunların yük
 
 2.  **Uygulamayı Çalıştırın:**
     ```bash
-    python react_final_agent.py
+    python react_gui_agent.py
     ```
 
-3.  **EXE Haline Getirme (Opsiyonel):**
-    Uygulamayı bir masaüstü programı (`.exe`) olarak kullanmak isterseniz:
+3.  **EXE Haline Getirme:**
+    Taşınabilir bir program oluşturmak için:
     ```bash
     pip install pyinstaller
-    python -m PyInstaller --onefile --noconsole --name "ReactAgent" react_final_agent.py
+    python -m PyInstaller --onefile --noconsole --name "ReactAgent" react_gui_agent.py
     ```
-    Oluşan dosya `dist` klasörü altında yer alacaktır.
 
 ## 📁 Proje Yapısı
 
-* `react_final_agent.py`: Uygulamanın tüm mantığını ve arayüzünü barındıran ana Python kodu.
-* `README.md`: Proje hakkında bilgi veren doküman.
-* `.gitignore`: Gereksiz dosyaların (node_modules, build vb.) GitHub'a yüklenmesini engelleyen liste.
-
-## 🤝 Katkıda Bulunma
-
-1. Bu depoyu fork edin.
-2. Yeni bir branch oluşturun (`git checkout -b feature/yeniOzellik`).
-3. Değişikliklerinizi commit edin (`git commit -m 'Yeni özellik eklendi'`).
-4. Branch'inizi push edin (`git push origin feature/yeniOzellik`).
-5. Bir Pull Request açın.
+* `react_gui_agent.py`: Uygulamanın ana kaynak kodu.
+* `proje-image.jpg`: Uygulama ekran görüntüsü.
+* `LICENSE`: MIT Lisans dosyası.
+* `.gitignore`: Gereksiz dosyaların filtrelendiği liste.
 
 ---
 **Geliştirici:** [erenzirekbilek](https://github.com/erenzirekbilek)
