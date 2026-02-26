@@ -2,7 +2,7 @@
 
 React projelerinizi başlatma ve derleme süreçlerini görsel bir arayüzle yönetin. Terminal karmaşasına son verin!
 
-![Uygulama Ekran Görüntüsü](proje-image.jpg)
+![Uygulama Ekran Görüntüsü](proje-image.jpeg)
 
 Bu proje, React uygulamalarını sıfırdan oluşturmayı ve mevcut projelerin build süreçlerini otomatize eden, Python tabanlı bir GUI (Grafiksel Arayüz) asistanıdır.
 
